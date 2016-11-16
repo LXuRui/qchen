@@ -1,0 +1,135 @@
+<!doctype html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.cjjg1{
+			width: 6.4rem;
+			height: 11.36rem;
+			background: url(img/bg01.jpg) 0 0 no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			padding-bottom: 0.5rem;
+		}
+		.cjjg1_tou{
+			width: 6.4rem;
+			height: 0.6rem;
+			position: relative;
+			background: #1D1E22;
+			color: #fff;
+			padding: 0.1rem 0;
+		}
+		.cjjg1_tou_1{
+			width: 6.4rem;
+			height: 0.6rem;
+			text-align: center;
+			line-height: 0.6rem;
+			font-size: 0.4rem;
+			margin-top: 0.02rem;
+		}
+		.cjjg1_tou_2{
+			width: 1.2rem;
+			height: 0.6rem;
+			text-align: center;
+			line-height: 0.6rem;
+			font-size: 0.3rem;
+			position: absolute;
+			left: 0.1rem;
+			top: 0.1rem;
+			cursor: pointer;
+		}
+		.mscx_p2_sp1{
+			font-size: 0.35rem;
+		}
+		.cjjg1_tou_3{
+			width: 0.8rem;
+			height: 0.6rem;
+			text-align: center;
+			line-height: 0.6rem;
+			position: absolute;
+			right: 0.1rem;
+			top: 0.1rem;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.cjjg1_tou_3 span{
+			margin-top: 0.25rem;
+			margin-right: 0.1rem;
+			float: left;
+			width: 0;
+			height: 0;
+			border: 0.05rem solid #fff;
+			border-radius: 50%;
+		}
+		.bg02{
+			width: 6.4rem;
+		}
+		.cjjg1_2{
+			margin-top: 0.4rem;
+			line-height: 0.4rem;
+		}
+		.cjjg1_2 p:nth-child(1){
+			font-size: 0.6rem;
+			color: red;
+			font-weight: bold;
+			width: 6.4rem;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 0.5rem;
+		}
+		.cjjg1_2 p:nth-child(2){
+			font-size: 0.3rem;
+			font-weight: bold;
+			color: #707374;
+			width: 5rem;
+			margin: 0.1rem auto;
+			line-height: 0.5rem;
+		}
+		.cjjg1_2 span{
+			color: #0F3475;
+		}
+	</style>
+</head>
+<body>
+	<div class="cjjg1">
+		<div class="cjjg1_tou">
+			<div class="cjjg1_tou_1">抽奖结果
+			</div>
+			<div class="cjjg1_tou_2">
+				<span class="mscx_p2_sp1"><</span>
+				<span class="mscx_p2_sp2">返回</span>
+			</div>
+			<div class="cjjg1_tou_3">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="cjjg1_1">
+			<img src="img/bg02.jpg" alt="" class="bg02">
+		</div>
+		<div class="cjjg1_2">
+			<p>好心塞</p>
+			<p>很抱歉，您的运气还差那么一点点！<span>11.20-11.29，</span>广州国际车展，<span>广州琶洲国际会展中心4.2号馆，</span>启辰展馆多彩绽放，诚邀您莅临现场，亲身体验！</p>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/ort.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$('.cjjg1_tou_2').click(function (){
+		window.open('shouye.html','_self');
+		})
+	})
+</script>
+</html>

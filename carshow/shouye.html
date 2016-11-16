@@ -1,0 +1,320 @@
+<!doctype html>
+<html style="font-size:100px;">
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.sy_box{
+			width: 6.4rem;
+			height: 11.36rem;
+			background: url(img/bg01.jpg) 0 0 no-repeat;
+			background-size: 100% 100%;
+			position: relative;
+			padding-bottom: 0.5rem;
+		}
+		.sy_box_tou{
+			width: 6.4rem;
+			height: 0.6rem;
+			position: relative;
+			background: #1D1E22;
+			color: #fff;
+			padding: 0.1rem 0;
+		}
+		.sy_box_tou_1{
+			width: 6.4rem;
+			height: 0.6rem;
+			text-align: center;
+			line-height: 0.6rem;
+			font-size: 0.4rem;
+			margin-top: 0.02rem;
+		}
+		.sy_box_tou_2{
+			width: 1.2rem;
+			height: 0.6rem;
+			text-align: center;
+			line-height: 0.6rem;
+			font-size: 0.3rem;
+			position: absolute;
+			left: 0.1rem;
+			top: 0.1rem;
+			cursor: pointer;
+		}
+		.mscx_p2_sp1{
+			font-size: 0.35rem;
+		}
+		.sy_box_tou_3{
+			width: 0.8rem;
+			height: 0.6rem;
+			text-align: center;
+			line-height: 0.6rem;
+			position: absolute;
+			right: 0.1rem;
+			top: 0.1rem;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		.sy_box_tou_3 span{
+			margin-top: 0.25rem;
+			margin-right: 0.1rem;
+			float: left;
+			width: 0;
+			height: 0;
+			border: 0.05rem solid #fff;
+			border-radius: 50%;
+		}
+		.bg02{
+			width: 6.4rem;
+		}
+		.sy_box_2{
+			width: 6.4rem;
+			text-align: center;
+		    margin-top: 0.2rem;
+		}
+		.msyl{
+			width: 5.09rem;
+		}
+		.sy_box_3{
+			width: 4.33rem;
+			height: 0.97rem;
+			text-align: center;
+			margin: 0.4rem auto;
+			background: url(img/btn01.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			font-size: 0.4rem;
+			line-height: 0.97rem;
+			color: #fff;
+			font-style:italic;
+			-webkit-text-stroke: 0.01rem #CDB1DA;
+			cursor: pointer;
+		}
+		.sy_box_4{
+			width: 4.33rem;
+			height: 0.97rem;
+			text-align: center;
+			margin: 0.2rem auto;
+			background: url(img/btn01.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			font-size: 0.4rem;
+			font-style:italic;
+			-webkit-text-stroke: 1px #CDB1DA;
+			line-height: 0.97rem;
+			color: #fff;
+			cursor: pointer;
+		}
+		.sy_box_3 span,.sy_box_4 span{
+			padding: 0 0.2rem;
+		}
+		.sy_box_5{
+			width: 4.33rem;
+			height: 0.97rem;
+			text-align: center;
+			margin: 0.2rem auto;
+			font-size: 0.45rem;
+			line-height: 0.97rem;
+			font-style:italic;
+			color: #003597;
+			font-weight: bold;
+			text-decoration:underline;
+		}
+		.sy_box_5 span{
+			cursor: pointer;
+		}
+		.sy_qr{
+			width: 5.33rem;
+			height: 4rem;
+			border: 4px solid #083878;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -2rem;
+			margin-left: -2.75rem;
+			background: #fff;
+			padding: 0.2rem 0.1rem;
+			border-radius: 0.2rem;
+			display: none;
+		}
+		.sy_qr_1,.sy_qr_2,.sy_qr_3{
+			font-size: 0.35rem;
+			text-align: center;
+			margin-top: 0.1rem;
+			color: #003597;
+			font-weight: bold;
+		}
+		.sy_qr_4,.sy_qr_5{
+			width: 4.33rem;
+			height: 0.97rem;
+			text-align: center;
+			margin: 0.2rem auto;
+			background: url(img/btn01.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			font-size: 0.4rem;
+			font-style:italic;
+			-webkit-text-stroke: 1px #CDB1DA;
+			line-height: 0.97rem;
+			color: #fff;
+			cursor: pointer;
+		}
+		.sy_hdsm{
+			width: 5.33rem;
+			height: 6.3rem;
+			font-size: 0.3rem;
+			color: #3c3c3c;
+			border: 4px solid #083878;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -2.9rem;
+			margin-left: -3.05rem;
+			padding: 0.3rem 0.3rem;
+			display: none;
+			background: #fff;
+			border-radius: 0.2rem;
+			line-height: .38rem;
+		}
+		.sy_hdsm dt{
+			color: #1B3575;
+			font-weight: bold;
+			margin-bottom: 0.2rem;
+		}
+		.sy_hdsm dd{
+			text-indent: 0.5rem;
+		}
+		.sm_mscj{
+			width: 4.33rem;
+			height: 0.97rem;
+			text-align: center;
+			margin: 0.2rem auto;
+			background: url(img/btn01.png) 0 0 no-repeat;
+			background-size: 100% 100%;
+			font-size: 0.4rem;
+			font-style:italic;
+			-webkit-text-stroke: 1px #CDB1DA;
+			line-height: 0.97rem;
+			color: #fff;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="sy_box">
+		<div class="sy_box_tou">
+			<div class="sy_box_tou_1">码上辰献
+			</div>
+			<div class="sy_box_tou_2">
+				<span class="mscx_p2_sp1"><</span>
+				<span class="mscx_p2_sp2">返回</span>
+			</div>
+			<div class="sy_box_tou_3">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="sy_box_1">
+			<img src="img/bg02.jpg" alt="" class="bg02">
+		</div>
+		<div class="sy_box_2">
+			<img src="img/msyl.png" alt="" class="msyl">
+		</div>
+		<div class="sy_box_3">
+			<span>我在车展&nbsp马上拿奖
+			</span>
+		</div>
+		<div class="sy_box_4">
+			<span>不在现场&nbsp试试手气</span>
+		</div>
+		<div class="sy_box_5">
+			<span>活动说明</span>
+		</div>
+		<div class="sy_qr">
+			<div class="sy_qr_1">请确认你是否在车展现场,</div>
+			<div class="sy_qr_2">以免无法兑奖,</div>
+			<div class="sy_qr_3">不在车展现场还可以抽取话费哦!</div>
+			<div class="sy_qr_4">
+				<span>确定</span>
+			</div>
+			<div class="sy_qr_5">
+				<span>重新选择</span>
+			</div>
+		</div>
+		<div class="sy_hdsm">
+			<dt>活动说明:</dt>
+			<dd>抽奖活动哪家强，东风日产看启辰。广州车展期间，启辰君为您准备了多彩铅笔套装、购车代金券、晨风车模、手机话费等精美礼品；</dd>
+			<dd>车展现场参与活动的用户百分百中奖，留下联系方式更有机会赢取启辰R30、启辰晨风一年使用权大奖；场外用户参与活动也有机会获得话费充值大奖</dd>
+			<dd>心动了吗？那就行动吧！</dd>
+			<dd>参与车展现场抽奖活动，中奖礼品只限当天在启辰展台现场兑奖，过时不候哦，详情请咨询启辰展台工作人员。</dd>
+			<div class="sm_mscj">
+				<span>马上抽奖</span>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/ort.js"></script>
+<script type="text/javascript">
+function setCookie (key,value,days) {
+	var date=new Date();
+	date.setDate(date.getDate()+days);
+	document.cookie=key+"="+escape(value)+"; expires="+date;
+	}
+function getCookie (key) {
+	var arr=document.cookie.split('; ');
+	for (var i = 0; i < arr.length; i++) {
+			var arr1=arr[i].split('=');
+			if (arr1[0]==key) {
+				return unescape(arr1[1]);
+			};
+		};
+		return false;
+	}
+function removeCookie (key) {
+	setCookie (key,'0',-1);
+}
+$(function (){
+	$('.sm_mscj').click(function (){
+		$('.sy_qr').show();
+	})
+	$('.sy_qr_5').click(function (){
+		$('.sy_qr').hide();
+	})
+	$('.sy_box_5').click(function (){
+		$('.sy_hdsm').show();
+	})
+	$('.sm_mscj').click(function (){
+		$('.sy_hdsm').hide();
+	})
+	$('.sy_qr_4').click(function (){
+		if(getCookie('lxryes')||getCookie('lxrno')){
+			window.open('cjjg2.html','_self');
+		}else{
+			window.open('choujiang.html','_self');
+			setCookie('lxryes','rui',7);
+		}
+	})
+	$('.sy_box_3').click(function (){
+		if(getCookie('lxryes')||getCookie('lxrno')){
+			window.open('cjjg2.html','_self');
+		}else{
+			window.open('choujiang.html','_self');
+			setCookie('lxryes','rui',7);
+		}
+	})
+	$('.sy_box_4').click(function (){
+		if(getCookie('lxrno')||getCookie('lxryes')){
+			window.open('cjjg2.html','_self');
+		}else{
+			window.open('choujiang.html','_self');
+			setCookie('lxrno','rui',7);	
+		}
+	})
+})
+</script>
+</html>
